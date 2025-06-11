@@ -1,6 +1,51 @@
+import { styles } from "@/styles/styles";
+import { Link } from "react-router-dom";
+import { NavCenterAccardion } from "./NavCenterAccardion";
+import { navbarCenterData } from "@/constants";
 
 export default function NavbarCenter() {
   return (
-    <div>NavbarCenter</div>
-  )
+    <div className="w-full bg-[#F7EBE5] flex justify-start h-[48px] xl:mx- ">
+      <div className={`${styles.container} grid grid-cols-2 xl:mx-auto`}>
+        
+        {/* LEFT LINKS */}
+        <ul className={`flex lg:gap-[10px] xl:gap-[14px] h-full place-items-center text-[#000]/79 ${styles.unitxt}`}>
+          {navbarCenterData.leftData.map((item) => (
+            <Link key={item.id} to={item.path} className="h-full">
+              <li className="hover:border-b-2 hover:border-b-orange-600 
+                border-b-2 border-transparent h-full transition-[0.2s] flex place-items-center">
+                {item.title}
+              </li>
+            </Link>
+          ))}
+        </ul>
+        
+        {/* RIGHT DATA */}
+        <div className="flex justify-between items-center">
+          {/* Language Selector */}
+          <NavCenterAccardion selectLang={navbarCenterData?.rightData?.selectLang} />
+          {/* Contacts */}
+          {navbarCenterData.rightData.contacts.map((contact) => (
+            <div key={contact.id} className="flex items-center ml-4">
+              <img src={contact.img} alt="" className="w-[24px] h-[24px] mr-2" />
+              <p className={`${styles.unitxt}`}>{contact.title}</p>
+            </div>
+          ))}
+
+          {/* Social Icons */}
+          <div className="flex items-center ml-4 space-x-2">
+            {navbarCenterData.rightData.social.map((social) => (
+              <img
+                key={social.id}
+                src={social.img}
+                alt={social.alt}
+                className="w-[24px] h-[24px]"
+              />
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
 }
