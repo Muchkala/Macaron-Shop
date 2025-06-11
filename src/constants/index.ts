@@ -7,7 +7,7 @@ import social1 from '@/assets/icons/UniTelegram.svg'
 import social2 from '@/assets/icons/UniOK.svg'
 import social3 from '@/assets/icons/UniWK.svg'
 
-import phoneIcon from '@/assets/icons/navPhone.svg'
+import phoneIcon from '@/assets/icons/NavPhone.svg'
 import cartIcon from '@/assets/icons/UniCart.svg'
 
 import type { NavbarCenterData, NavbarTop } from '@/types'
