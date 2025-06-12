@@ -1,5 +1,6 @@
-export default function SaleProductItem({ data }) {
+import type { ISaleProducts } from "@/types";
 
+export default function SaleProductItem({ data }: { data: ISaleProducts }) {
       return (
             <div className='group hover:-translate-y-4 duration-200 cursor-pointer'>
                   <div className='relative overflow-hidden rounded-t-lg'>
