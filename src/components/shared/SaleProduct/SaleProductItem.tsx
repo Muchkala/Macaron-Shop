@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import type { SaleProductItem } from "@/types";
 
 export default function SaleProductItem({ data }: SaleProductItem) {
+=======
+import type { ISaleProductItem } from "@/types";
+
+export default function SaleProductItem({ data }: ISaleProductItem) {
+>>>>>>> f4bf0b4f6aa4645011b60ef0aecccc92b9954599
 
       return (
             <div className='group hover:-translate-y-4 duration-200 cursor-pointer'>
