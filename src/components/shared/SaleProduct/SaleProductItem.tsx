@@ -1,6 +1,6 @@
-import React from 'react'
+import type { SaleProductItem } from "@/types";
 
-export default function SaleProductItem({ data }) {
+export default function SaleProductItem({ data }: SaleProductItem) {
 
       return (
             <div className='group hover:-translate-y-4 duration-200 cursor-pointer'>
@@ -9,7 +9,7 @@ export default function SaleProductItem({ data }) {
                         <img src={data.img} alt="" className='w-full aspect-square object-cover group-hover:scale-110 duration-200' />
                   </div>
                   <div className='p-5 pb-7 bg-[#FF4D6D] group-hover:bg-[#8CC4EC] duration-200 rounded-b-lg'>
-                        <h1 className='h-15 text-md font-semibold text-white'>{data.title}</h1>
+                        <h1 className='h-15 text-md font-semibold text-white text-center'>{data.title}</h1>
                   </div>
             </div>
       )
