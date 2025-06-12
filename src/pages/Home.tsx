@@ -4,7 +4,7 @@ import SaleProductsList from '@/components/shared/SaleProduct/SaleProductsList.t
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#F7F7F7]">
       <SaleProductsList data={SaleProducts} title={"Акции"} />
     </div>
   )
