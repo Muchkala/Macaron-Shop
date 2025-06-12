@@ -44,3 +44,10 @@ export interface NavbarCenterData {
     social: SocialItem[];
   };
 };
+
+export type HolidaysType = {
+  id: number;
+  img: string;
+  title: string;
+  rotate?: number;
+}

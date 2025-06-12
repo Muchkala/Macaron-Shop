@@ -15,7 +15,11 @@ import saleProduct2 from '@/assets/images/Sale Product (2).png'
 import saleProduct3 from '@/assets/images/Sale Product (3).png'
 import saleProduct4 from '@/assets/images/Sale Product (4).png'
 
-import type { ISaleProducts, NavbarCenterData, NavbarTop, } from '@/types'
+import BisquiteYellow from "@/assets/images/Bisquite yellow.png"
+import BisquiteBlue from "@/assets/images/Bisquite blue.png"
+import BisquitePink from "@/assets/images/Bisquite pink.png"
+
+import type { HolidaysType, ISaleProducts, NavbarCenterData, NavbarTop, } from '@/types'
 
 
 export const navbarCenterData: NavbarCenterData = {
@@ -127,3 +131,14 @@ export const SaleProducts: ISaleProducts[] = [
     onSale: 'СЛАДКАЯ НОВИНКА',
   },
 ]
+
+export const HolidaysData: HolidaysType[] = [
+  { id: 0, title: "Скоро День рождения близкого человека", img: BisquiteYellow, rotate: -18 },
+  { id: 1, title: "1 января - Новый Год 2021", img: BisquiteBlue, rotate: 24 },
+  { id: 2, title: "14 февраля - День Святого Валентина", img: BisquitePink, rotate: -16 },
+  { id: 3, title: "23 февраля - День Защитника Отечества", img: BisquiteYellow, rotate: 23 },
+  { id: 4, title: "8 марта - Международный Женский День", img: BisquiteBlue, rotate: -6 },
+  {
+    id: 5, title: "9 марта - День Сурка", img: BisquitePink, rotate: 17
+  }
+]; 

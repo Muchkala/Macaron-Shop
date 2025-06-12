@@ -15,10 +15,10 @@ export default function SaleProductsList({ title, data }: ISaleProductsList) {
       return (
             <div className={`${styles.container} `}>
                   <UniHeader text={title} />
-                  <Carousel className={`${cn(`w-full`)}`} opts={{ loop: true }} plugins={[Autoplay({ delay: 3000 })]}>
+                  <Carousel className={`${cn(`w-full`)}`} opts={{ loop: true , align: "start" }} plugins={[Autoplay({ delay: 3000 })]}>
                         <CarouselContent>
                               {data.map((item, index) => (
-                                    <CarouselItem key={index} className={`${cn(`w-full max-w-[271px]`)}`}>
+                                    <CarouselItem key={index} className={`${cn(`w-full basis-1/1 md:basis-1/2 lg:basis-1/4`)}`}>
                                           <div className="p-1">
                                                 <SaleProductItem data={item} key={index} />
                                           </div>
