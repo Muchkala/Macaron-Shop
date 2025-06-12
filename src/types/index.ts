@@ -11,7 +11,10 @@ export interface ISaleProducts {
   onSale: string;
 }
 
-
+export interface ISaleProductsList {
+  title: string;
+  data: ISaleProducts[];
+}
 
 
 export type NavbarLink = {
@@ -41,3 +44,12 @@ export interface NavbarCenterData {
     social: SocialItem[];
   };
 };
+
+
+export interface ISaleProductItem {
+      data: {
+            onSale: string;
+            img: string;
+            title: string;
+      };
+}

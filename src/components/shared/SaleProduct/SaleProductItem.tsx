@@ -1,6 +1,6 @@
-import React from 'react'
+import type { ISaleProductItem } from "@/types";
 
-export default function SaleProductItem({ data }) {
+export default function SaleProductItem({ data }: ISaleProductItem) {
 
       return (
             <div className='group hover:-translate-y-4 duration-200 cursor-pointer'>

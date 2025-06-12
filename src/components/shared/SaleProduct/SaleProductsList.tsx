@@ -1,8 +1,8 @@
 import { styles } from '@/styles/styles.ts'
 import SaleProductItem from './SaleProductItem.tsx'
+import type { ISaleProductsList } from '@/types/index.ts'
 
-
-export default function SaleProductsList({ title, data }) {
+export default function SaleProductsList({ title, data }: ISaleProductsList) {
       return (
             <div className={`${styles.container} `}>
                   <h1>{title}</h1>
