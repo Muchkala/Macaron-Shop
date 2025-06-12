@@ -19,6 +19,7 @@ export default function NavbarCenter() {
             </Link>
           ))}
         </ul>
+
         
         {/* RIGHT DATA */}
         <div className="flex justify-between items-center">
