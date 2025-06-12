@@ -5,7 +5,7 @@ import { navbarCenterData } from "@/constants";
 
 export default function NavbarCenter() {
   return (
-    <div className="w-full bg-[#F7EBE5] flex justify-start h-[48px] xl:mx- ">
+    <div className="w-full bg-[#F7EBE5] hidden lg:flex justify-center h-[48px]">
       <div className={`${styles.container} grid grid-cols-2 xl:mx-auto`}>
         
         {/* LEFT LINKS */}
@@ -33,7 +33,7 @@ export default function NavbarCenter() {
           ))}
 
           {/* Social Icons */}
-          <div className="flex items-center ml-4 space-x-2">
+          <div className="xl:flex hidden items-center ml-4 space-x-2">
             {navbarCenterData.rightData.social.map((social) => (
               <img
                 key={social.id}

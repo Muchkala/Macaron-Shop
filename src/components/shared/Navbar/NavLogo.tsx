@@ -1,8 +1,13 @@
 import logo from '@/assets/icons/Logo Macaron.svg'
-export default function NavLogo() {
+
+type Props ={
+  cn: string
+}
+
+export default function NavLogo({cn}:Props) {
   return (
-    <div className="bg-[#B3D9F3] rounded-full p-2 inline-block">
-      <img src={logo} alt="Logo" className="w-12 h-12" />
+    <div className={cn}>
+      <img src={logo} alt="Logo" className='object-contain w-full h-full'/>
     </div>
   );
 }
