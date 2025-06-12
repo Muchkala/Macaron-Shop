@@ -1,7 +1,14 @@
 export interface NavbarTop {
-    id: number;
-    img: string;
-    title: string;
+  id: number;
+  img: string;
+  title: string;
+}
+
+export interface ISaleProducts {
+  id: number;
+  img: string;
+  title: string;
+  onSale: string;
 }
 
 
