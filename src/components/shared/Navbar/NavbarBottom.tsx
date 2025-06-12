@@ -4,6 +4,7 @@ import img from '@/assets/icons/NavbottomPercent.svg'
 import { ChevronDown } from "lucide-react";
 import bars from '@/assets/icons/Bars.svg'
 import cart from '@/assets/icons/UniCart.svg'
+import NavbarTooltip from "./NavbarTooltip";
 
 export default function NavbarBottom() {
   return (
@@ -17,9 +18,7 @@ export default function NavbarBottom() {
           <li className={`${styles.unitxt} ${styles.borderBHover} cursor-pointer h-[40px] uppercase items-center
           flex lg:gap-[2px] xl:gap-[5px]`}> <h6>СЛАДКИЕ ДНИ</h6> <img src={img} alt="%" /></li>
           
-          <li className={`${styles.unitxt} ${styles.borderBHover} cursor-pointer h-[40px] uppercase items-center
-          flex lg:gap-[2px] xl:gap-[5px]`}> <h6>подарочные</h6><h6 className="hidden xl:block">наборы </h6>
-            <ChevronDown className="w-[12px]"/></li>
+          <NavbarTooltip />
           
           <li className={`${styles.unitxt} ${styles.borderBHover} cursor-pointer h-[40px] uppercase items-center
           flex lg:gap-[2px] xl:gap-[5px]`}> <h6>Собрать набор</h6> </li>
