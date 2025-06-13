@@ -19,7 +19,8 @@ import BisquiteYellow from "@/assets/images/Bisquite yellow.png"
 import BisquiteBlue from "@/assets/images/Bisquite blue.png"
 import BisquitePink from "@/assets/images/Bisquite pink.png"
 
-import type { HolidaysType, ISaleProducts, NavbarCenterData, NavbarTop, } from '@/types'
+import type { HolidaysType, ISaleProducts } from '@/types'
+import type { NavbarCenterData, NavbarTop } from '@/components/shared/Navbar/navbar.config'
 
 
 export const navbarCenterData: NavbarCenterData = {
@@ -56,8 +57,6 @@ export const navbarCenterData: NavbarCenterData = {
   },
 };
 
-
-
 export const NavbarTopList: NavbarTop[] = [
   {
     id: 0,
@@ -80,6 +79,10 @@ export const NavbarTopList: NavbarTop[] = [
     title: 'МИНДАЛЬНАЯ MУKA И НАТУРАЛЬНЫЕ ИНГРЕДИЕНТЫ',
   },
 ]
+
+
+
+
 
 export const SaleProducts: ISaleProducts[] = [
   {
@@ -131,6 +134,10 @@ export const SaleProducts: ISaleProducts[] = [
     onSale: 'СЛАДКАЯ НОВИНКА',
   },
 ]
+
+
+
+
 
 export const HolidaysData: HolidaysType[] = [
   { id: 0, title: "Скоро День рождения близкого человека", img: BisquiteYellow, rotate: -18 },
