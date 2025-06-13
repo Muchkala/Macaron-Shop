@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import { styles } from "@/styles/styles"
-export default function NavbarTooltip() {
+export default function NavbarNavigation() {
   return (
     <NavigationMenu >
       <NavigationMenuList>
