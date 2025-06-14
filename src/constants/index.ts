@@ -15,9 +15,18 @@ import saleProduct2 from '@/assets/images/Sale Product (2).png'
 import saleProduct3 from '@/assets/images/Sale Product (3).png'
 import saleProduct4 from '@/assets/images/Sale Product (4).png'
 
+
 import BisquiteYellow from "@/assets/images/Bisquite yellow.png"
 import BisquiteBlue from "@/assets/images/Bisquite blue.png"
 import BisquitePink from "@/assets/images/Bisquite pink.png"
+
+import PopularSets1 from '@/assets/images/Popular sets (1).png'
+import PopularSets2 from '@/assets/images/Popular sets (2).png'
+import PopularSets3 from '@/assets/images/Popular sets (3).png'
+import PopularSets4 from '@/assets/images/Popular sets (4).png'
+import PopularSets5 from '@/assets/images/Popular sets (5).png'
+import PopularSets6 from '@/assets/images/Popular sets (6).png'
+
 
 import type { HolidaysType, ISaleProducts } from '@/types'
 import type { NavbarCenterData, NavbarTop } from '@/components/shared/Navbar/navbar.config'
@@ -148,4 +157,13 @@ export const HolidaysData: HolidaysType[] = [
   {
     id: 5, title: "9 марта - День Сурка", img: BisquitePink, rotate: 17
   }
-]; 
+];
+
+export const PopularSetsData = [
+  { id: 1, name: "Сердце", desc: "24 штуки в коробке в виде сердца.Ассорти из 6 вкусов ", price: 2800, img: PopularSets1 },
+  { id: 2, name: "Красота спасёт мир ", desc: "Набор 16 шт. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан ", price: 750, img: PopularSets2 },
+  { id: 3, name: "Круглый набор", desc: "40 макаронс в круглой коробке с персональной надписью ", price: 3900, img: PopularSets3 },
+  { id: 4, name: "Набор на 9", desc: "Набор из 9 штук в квадратной коробке. Вкусы: шоколад, фисташка, вишня ", price: 950, img: PopularSets4 },
+  { id: 5, name: "Набор на 16", desc: "Набор 16 шт. Вкусы: соленая карамель, голубой сыр, пармезан, шоколад  ", price: 1500, img: PopularSets5 },
+  { id: 6, name: "Сердце ", desc: "24 штуки в коробке в виде сердца.Ассорти из 6 вкусов ", price: 2500, img: PopularSets6 },
+]

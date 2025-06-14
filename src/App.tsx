@@ -6,6 +6,6 @@ export default function App() {
     <div>
       <Navbar />
       <AppRouter />
-     </div>
+    </div>  
   )
 }
