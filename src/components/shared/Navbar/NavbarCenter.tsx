@@ -6,10 +6,10 @@ import { navbarCenterData } from "@/constants";
 export default function NavbarCenter() {
   return (
     <div className="w-full bg-[#F7EBE5] hidden lg:flex justify-center h-[48px]">
-      <div className={`${styles.container} grid grid-cols-2 xl:mx-auto`}>
+      <div className={`${styles.container} flex lg:gap-4 justify-between xl:mx-auto`}>
         
         {/* LEFT LINKS */}
-        <ul className={`flex lg:gap-[10px] xl:gap-[14px] h-full place-items-center text-[#000]/79 ${styles.unitxt}`}>
+        <ul className={`flex lg:w-[70%] xl:w-[80%] lg:gap-[20px] xl:gap-[20px] h-full place-items-center text-[#000]/79 ${styles.unitxt}`}>
           {navbarCenterData.leftData.map((item) => (
             <Link key={item.id} to={item.path} className="h-full">
               <li className="hover:border-b-2 hover:border-b-orange-600 
@@ -22,9 +22,9 @@ export default function NavbarCenter() {
 
         
         {/* RIGHT DATA */}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-start xl:gap-[25px] lg:justify-evenly  lg:w-[110%] items-center">
           {/* Language Selector */}
-          <NavCenterAccardion selectLang={navbarCenterData?.rightData?.selectLang} />
+          <NavCenterAccardion />
           {/* Contacts */}
           {navbarCenterData.rightData.contacts.map((contact) => (
             <div key={contact.id} className="flex items-center ml-4">

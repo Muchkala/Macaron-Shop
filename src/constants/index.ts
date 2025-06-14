@@ -32,6 +32,74 @@ import type { HolidaysType, ISaleProducts } from '@/types'
 import type { NavbarCenterData, NavbarTop } from '@/components/shared/Navbar/navbar.config'
 
 
+import Navpercent from '@/assets/icons/NavbottomPercent.svg';
+
+
+
+export const navbarBottomData = {
+  left: [
+    {
+      id: 10,
+      title: 'СЛАДКИЕ ДНИ',
+      icon: Navpercent,
+      dropdown: false,
+    },
+    {
+      id: 11,
+      title: 'ПОДАРОЧНЫЕ НАБОРЫ',
+      dropdown: true,
+      dropdownItems: [
+        'ВСЕ НАБОРЫ',
+        'ПОСЛЕДНИЙ ЗВОНОК',
+        'ДЕНЬ РОЖДЕНИЯ',
+        'МАКАРОНС КЛАССИЧЕСКИЕ',
+        'СВАДЕБНЫЕ ПРЕДЛОЖЕНИЯ',
+        'КЕНДИ-БАРЫ',
+        'КОРПОРАТИВНЫЕ ПОДАРКИ',
+      ],
+    },
+    {
+      id: 12,
+      title: 'Собрать набор',
+      dropdown: false,
+    },
+  ],
+  right: [
+    {
+      id: 0,
+      title: 'Создать дизайн',
+      dropdown: false,
+    },
+    {
+      id: 1,
+      title: 'КОМПАНИЯМ',
+      dropdown: true,
+      dropdownItems: [
+        'Корпоративные подарки',
+        'Оптовые поставки',
+        'Эклеры оптом',
+      ],
+    },
+    {
+      id: 2,
+      title: 'ВЕСЬ КАТАЛОГ',
+      dropdown: true,
+      dropdownItems: [
+        'Каталог десертов',
+        'Макарон',
+        'Эклеры',
+        'Вафельные трубочки',
+        'Кейк-попсы',
+        'Десерт картошка',
+        'Комбо-наборы',
+      ],
+    },
+  ],
+}
+
+
+
+
 export const navbarCenterData: NavbarCenterData = {
   leftData: [
     { id: 0, title: 'Гарантия свежести', path: '/' },

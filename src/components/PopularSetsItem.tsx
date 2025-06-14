@@ -1,6 +1,17 @@
 import ShoppingBag from '@/assets/icons/ShoppingBag.svg'
 
-export default function PopularSetsItem({ data }) {
+interface PopularSetData {
+      img: string;
+      name: string;
+      desc: string;
+      price: number;
+}
+
+interface PopularSetsItemProps {
+      data: PopularSetData;
+}
+
+export default function PopularSetsItem({ data }: PopularSetsItemProps) {
       return (
             <div className='group'>
                   <div className=' overflow-hidden'>

@@ -18,13 +18,13 @@ export default function NavbarNavigation() {
             </li></NavigationMenuTrigger>
           <NavigationMenuContent  className={cn('p-0!')}>
             <ul className="grid gap-2 p-0 w-56 max-h-[307px] h-full">
-              <NavigationMenuLink className="hover:bg-gray-100 p-2">ВСЕ НАБОРЫ</NavigationMenuLink>
-              <NavigationMenuLink className="hover:bg-gray-100 p-2">ПОСЛЕДНИЙ ЗВОНОК</NavigationMenuLink>
-              <NavigationMenuLink className="hover:bg-gray-100 p-2">ДЕНЬ РОЖДЕНИЯ</NavigationMenuLink>
-              <NavigationMenuLink className="hover:bg-gray-100 p-2">МАКАРОНС КЛАССИЧЕСКИЕ</NavigationMenuLink>
-              <NavigationMenuLink className="hover:bg-gray-100 p-2">СВАДЕБНЫЕ ПРЕДЛОЖЕНИЯ</NavigationMenuLink>
-              <NavigationMenuLink className="hover:bg-gray-100 p-2">КЕНДИ-БАРЫ</NavigationMenuLink>
-              <NavigationMenuLink className="hover:bg-gray-100 p-2">КОРПОРАТИВНЫЕ ПОДАРКИ</NavigationMenuLink>
+              <li><NavigationMenuLink className="hover:bg-gray-100 p-2">ВСЕ НАБОРЫ</NavigationMenuLink></li>
+              <li><NavigationMenuLink className="hover:bg-gray-100 p-2">ПОСЛЕДНИЙ ЗВОНОК</NavigationMenuLink></li>
+              <li><NavigationMenuLink className="hover:bg-gray-100 p-2">ДЕНЬ РОЖДЕНИЯ</NavigationMenuLink></li>
+              <li><NavigationMenuLink className="hover:bg-gray-100 p-2">МАКАРОНС КЛАССИЧЕСКИЕ</NavigationMenuLink></li>
+              <li><NavigationMenuLink className="hover:bg-gray-100 p-2">СВАДЕБНЫЕ ПРЕДЛОЖЕНИЯ</NavigationMenuLink></li>
+              <li><NavigationMenuLink className="hover:bg-gray-100 p-2">КЕНДИ-БАРЫ</NavigationMenuLink></li>
+              <li><NavigationMenuLink className="hover:bg-gray-100 p-2">КОРПОРАТИВНЫЕ ПОДАРКИ</NavigationMenuLink></li>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
