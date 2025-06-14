@@ -33,7 +33,7 @@ export function NavCenterAccardion() {
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="sm:max-w-[360px]">
+      <DialogContent aria-describedby={undefined} className="sm:max-w-[360px]">
         <DialogHeader>
           <DialogTitle className="text-lg">Выберите ваш регион:</DialogTitle>
         </DialogHeader>
