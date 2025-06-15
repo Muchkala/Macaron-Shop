@@ -1,23 +1,25 @@
 import { styles } from "@/styles/styles";
 import img1 from '@/assets/images/Header_Top_LG.png'
+import img2 from '@/assets/images/HeaderTopSM.png'
 import { Separator } from "./ui/separator";
 import { cn } from "@/lib/utils";
 
 export default function HomeHeader() {
   return (
-    <header className="w-full relative h-[480px]">
-        <img src={img1} alt="" className="absolute object-contain h-[600px] top-[-50px] z-0 w-full"/>
+    <header className="w-full relative h-[500px]">
+        <img src={img1} alt="" className="absolute hidden lg:block object-contain h-[600px] top-[-50px] z-0 w-full"/>
+        <img src={img2} alt="" className="absolute block lg:hidden object-contain w-full h-full bottom-[-100px] z-0"/>
         <div className={`${styles.container} z-20 relative bg-none h-full flex justify-end-safe`}>
-            <div className="flex max-w-[500px] w-full h-full items-center gap-1
+            <div className="flex lg:max-w-[500px] w-full h-[200px] lg:h-full items-center gap-1
              text-center text-[#292929] justify-center flex-col bg-none">
-                <h2 className="font-semibold leading-[100%] text-[22px] uppercase">Macaronshop</h2>
+                <h2 className="font-semibold leading-[140%] text-[22px] uppercase">Macaronshop</h2>
                 <div className="flex justify-center items-center gap-4 w-full">
                     <Separator className={cn('!w-[29px] my-2 !bg-black')} />
                     <p className="font-semibold leading-[100%] text-[22px]">since 2013</p>
                     <Separator className={cn('!w-[29px] my-2 !bg-black')}/>
                 </div>
-                <h1 className="font-semibold leading-[250%] text-[42px]">Настоящая любовь</h1>
-                <p className={`${styles.unitxt}`}>Пирожные макарон и другие десерты из натуральных ингредиентов,
+                <h1 className="font-semibold leading-[150%] lg:leading-[250%] text-[30px] md:text-[36px] lg:text-[42px]">Настоящая любовь</h1>
+                <p className={`${styles.unitxt} leading-[130%] md:!text-[18px]`}>Пирожные макарон и другие десерты из натуральных ингредиентов,
                      приготовленные с любовью</p>
             </div>
         </div>
