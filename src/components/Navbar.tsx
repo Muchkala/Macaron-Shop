@@ -3,7 +3,7 @@ import NavbarCenter from "@/components/shared/Navbar/NavbarCenter";
 import NavbarTop from "@/components/shared/Navbar/NavbarTop";
 export default function Navbar() {
   return (
-    <nav>
+    <nav className="relative z-20">
         <NavbarTop />
         <NavbarCenter/>
         <NavbarBottom/>
