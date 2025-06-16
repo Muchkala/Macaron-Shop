@@ -28,9 +28,17 @@ import PopularSets5 from '@/assets/images/Popular sets (5).png'
 import PopularSets6 from '@/assets/images/Popular sets (6).png'
 
 
-import type { HolidaysType, ISaleProducts } from '@/types'
+import type { HeaderCardData, HolidaysType, ISaleProducts } from '@/types'
 import type { NavbarCenterData, NavbarTop } from '@/components/shared/Navbar/navbar.config'
 
+
+
+import HHdr1 from '@/assets/images/HomeHeaderBTM1.png'
+import HHdr2 from '@/assets/images/HomeHeaderBTM2.png'
+import HHdr3 from '@/assets/images/HomeHeaderBTM3.png'
+import HHdr4 from '@/assets/images/HomeHeaderBTM4.png'
+import HHdr5 from '@/assets/images/HomeHeaderBTM5.png'
+import HHdr6 from '@/assets/images/HomeHeaderBTM6.png'
 
 import Navpercent from '@/assets/icons/NavbottomPercent.svg';
 
@@ -96,6 +104,55 @@ export const navbarBottomData = {
     },
   ],
 }
+
+
+
+
+
+export const headerCardData: HeaderCardData[] = [
+  {
+    id: 1,
+    image: HHdr1,
+    title: 'Готовые наборы',
+    description: 'Готовые наборы со скидкой. Вы можете подобрать набор на подходящий случай.',
+    gradient: 'sm:bg-[linear-gradient(to_top_left,_#FFDBC3_50%,_#FFDBC370_50%)]',
+  },
+  {
+    id: 2,
+    image: HHdr2,
+    title: 'Собрать свой набор',
+    description: 'Выбрать количество макарун, и выбрать вкусы',
+    gradient: 'sm:bg-[linear-gradient(to_top_right,_#FFC2CC_50%,_#FFC2CC70_50%)]',
+  },
+  {
+    id: 3,
+    image: HHdr3,
+    title: 'Набор с индивидуальной печатью',
+    description: 'Собрать набор макарон с уникальным дизайном.',
+    gradient: 'sm:bg-[linear-gradient(to_bottom_left,_#B4EAB3_50%,_#B4EAB370_50%)]',
+  },
+  {
+    id: 4,
+    image: HHdr4,
+    title: 'Свадебные предложения',
+    description: 'Нежные пирожные макаронс с разными вкусами для украшения вашего свадебного торжества',
+    gradient: 'sm:bg-[linear-gradient(to_bottom_right,_#FDD5CD_50%,_#FDD5CD70_50%)]',
+  },
+  {
+    id: 5,
+    image: HHdr5,
+    title: 'Корпоративные подарки',
+    description: 'От 85 руб за шт. С уникальным дизайном. Приятный комплимент для коллег и партнеров',
+    gradient: 'sm:bg-[linear-gradient(to_top_left,_#A8DCDF_50%,_#A8DCDF70_50%)]',
+  },
+  {
+    id: 6,
+    image: HHdr6,
+    title: 'Оптовые поставки',
+    description: 'Предложение для кофеен, кафе, отелей и т.д. Посмотрите условия сотрудничества и отзывы.',
+    gradient: 'sm:bg-[linear-gradient(to_top_right,_#C4C6EC_50%,_#C4C6EC70_50%)]',
+  },
+]
 
 
 
