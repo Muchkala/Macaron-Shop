@@ -12,13 +12,13 @@ export default function HomeHeader() {
         <div className={`${styles.container} z-20 relative bg-none h-full flex justify-end-safe`}>
             <div className="flex lg:max-w-[500px] w-full h-[200px] lg:h-full items-center gap-1
              text-center text-[#292929] justify-center flex-col bg-none">
-                <h2 className="font-semibold leading-[140%] text-[22px] uppercase">Macaronshop</h2>
+                <h2 className="font-semibold leading-[140%] md:text-[22px] text-[18px] uppercase">Macaronshop</h2>
                 <div className="flex justify-center items-center gap-4 w-full">
                     <Separator className={cn('!w-[29px] my-2 !bg-black')} />
-                    <p className="font-semibold leading-[100%] text-[22px]">since 2013</p>
+                    <p className={`${styles.unitxt}`}>since 2013</p>
                     <Separator className={cn('!w-[29px] my-2 !bg-black')}/>
                 </div>
-                <h1 className="font-semibold leading-[150%] lg:leading-[250%] text-[30px] md:text-[36px] lg:text-[42px]">Настоящая любовь</h1>
+                <h1 className="font-semibold leading-[150%] lg:leading-[250%] text-[24px] md:text-[36px] lg:text-[42px]">Настоящая любовь</h1>
                 <p className={`${styles.unitxt} leading-[130%] md:!text-[18px]`}>Пирожные макарон и другие десерты из натуральных ингредиентов,
                      приготовленные с любовью</p>
             </div>
