@@ -1,4 +1,10 @@
-import type { UniButtonType } from "@/types";
+
+interface UniButtonType {
+  children: React.ReactNode;
+  onClik?: React.MouseEventHandler<HTMLButtonElement>;
+  type?: "button" | "submit" | "reset";
+  className?: string;
+}
 
 export default function UniButton({ children, onClik, type, className }: UniButtonType) {
       return (

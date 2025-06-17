@@ -1,4 +1,3 @@
-import type { ReactElement } from "react";
 
 export interface ISaleProducts {
   id: number;
@@ -20,4 +19,11 @@ export type HolidaysType = {
 }
 
 
+export type HeaderCardData = {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  gradient: string;
+};
 
