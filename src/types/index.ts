@@ -19,9 +19,5 @@ export type HolidaysType = {
   rotate?: number;
 }
 
-export type UniButtonType = {
-  children: ReactElement | string;
-  onClik?: () => void;
-  type?: "reset" | "submit" | "button";
-  className?: string
-}
+
+

@@ -18,7 +18,7 @@ export default function SaleProductsList({ title, data }: ISaleProductsList) {
                   <Carousel className={`${cn(`w-full`)}`} opts={{ loop: true , align: "start" }} plugins={[Autoplay({ delay: 3000 })]}>
                         <CarouselContent>
                               {data.map((item, index) => (
-                                    <CarouselItem key={index} className={`${cn(`w-full basis-1/1 md:basis-1/2 lg:basis-1/4`)}`}>
+                                    <CarouselItem key={index} className={`${cn(`w-full basis-1/1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4`)}`}>
                                           <div className="p-1">
                                                 <SaleProductItem data={item} key={index} />
                                           </div>
