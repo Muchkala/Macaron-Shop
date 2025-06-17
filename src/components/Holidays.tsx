@@ -6,7 +6,7 @@ import Line from "@/assets/icons/LIne Doted.svg"
 
 export default function Holidays() {
       return (
-            <div className={`${styles.container}`}>
+            <div className={`${styles.container} hidden lg:block`}>
                   <UniHeader text="Ближайшие праздники" />
 
                   <div className="relative overflow-hidden">

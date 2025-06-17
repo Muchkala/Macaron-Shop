@@ -1,4 +1,4 @@
-
+import type { ReactElement } from "react";
 
 export interface ISaleProducts {
   id: number;
@@ -19,5 +19,9 @@ export type HolidaysType = {
   rotate?: number;
 }
 
-
-
+export type UniButtonType = {
+  children: ReactElement | string;
+  onClik?: () => void;
+  type?: "reset" | "submit" | "button";
+  className?: string
+}
