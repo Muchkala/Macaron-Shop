@@ -32,13 +32,13 @@ const LazyImage: React.FC<Props> = ({ alt, srcset, className }) => {
     }, [])
 
     return (
-        <div ref={elementRef} className={className}>
+        <div ref={elementRef} className="w-full">
             {
                 isLoader ? <picture>
                     <source media="(min-width:1200px )" srcSet={srcset.xl} />
                     <source media="(min-width:768px )" srcSet={srcset.md} />
                     <source media="(min-width:320px )" srcSet={srcset.sm} />
-                    <img src={srcset.sm} alt={alt} loading="lazy" />
+                    <img src={srcset.sm} alt={alt} loading="lazy" className={className}/>
                 </picture> : <div className="w-full h-full flex items-center justify-center">
                     <div className="animate-spin bg-[#F7EBE5] w-[100px] h-[100px] md:h-[340px] lg:h-[400px]"></div>
                 </div>
