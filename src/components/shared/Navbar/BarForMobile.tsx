@@ -1,6 +1,7 @@
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
+import { Link } from "react-router-dom";
 
 import bars from '@/assets/icons/Bars.svg';
 import cart from '@/assets/icons/UniCart.svg';
@@ -34,81 +35,88 @@ export default function BarForMobile() {
         <SheetContent
           side="left"
           className={cn(`
-            w-full sm:w-[400px] h-[80%] sm:h-full 
+            w-full lg:hidden flex sm:w-[400px] h-[80%] sm:h-full 
             overflow-y-auto px-5 py-12 bg-[#fceee8] text-black text-left
           `)}
         >
+          <SheetTitle className="sr-only">Menu</SheetTitle>
+          <SheetDescription className="sr-only">A list of navigation links and options.</SheetDescription>
+
           {/* City + Lang Selector */}
-          <NavCenterAccardion />
-          <Separator className="bg-neutral-300 h-[2px] my-4" />
+          <NavCenterAccardion isbold={true} />
+          <Separator className="bg-neutral-300 h-[1px] my-2" />
 
           {/* Mixed Menu */}
           <div className="flex flex-col gap-[12px]">
             {allItems.map((item) =>
               item.dropdown && item.dropdownItems?.length ? (
                 <Accordion type="multiple" key={item.id} className="w-full">
-                  <AccordionItem value={item.id.toString()}>
-                    <AccordionTrigger className={cn(`text-base p-0 justify-center`)}>
-                      <div className={`w-full text-center uppercase gap-0 ${styles.unitxt}`}>
+                  <AccordionItem value={item.id.toString()} className={cn(`border-b-0`)}>
+                    <AccordionTrigger className={cn(`text-base p-0  justify-center cursor-pointer`)}>
+                      <div className={`w-full ml-10 text-center uppercase gap-0 ${styles.unitxt}`}>
                         {item.title}
                       </div>
                     </AccordionTrigger>
-                    <AccordionContent className={`pl-5 flex flex-col gap-[12px] text-center uppercase ${styles.unitxt}`}>
+                    <AccordionContent className={`pl-5 py-4 flex flex-col gap-[12px] text-left uppercase ${styles.unitxt}`}>
                       {item.dropdownItems.map((sub, idx) => (
-                        <div key={idx}>{sub}</div>
+                        <Link to="/" key={idx} className="cursor-pointer">{sub}</Link>
                       ))}
                     </AccordionContent>
                   </AccordionItem>
+                  <Separator className="bg-neutral-300 h-[1px] my-2" />
                 </Accordion>
               ) : (
-                <div
-                  key={item.id}
-                  className={`flex items-center justify-center gap-2 px-1 uppercase ${styles.unitxt} text-center`}
-                >
-                  {item.icon && <img src={item.icon} alt={item.title} className="w-4 h-4" />}
-                  {item.title}
+                <div key={item.id} className="cursor-pointer">
+                  <Link to="/"
+                    className={`flex items-center justify-center gap-2 px-1 uppercase ${styles.unitxt} text-center`}
+                  >
+                    {item.icon && <img src={item.icon} alt={item.title} className="w-4 h-4" />}
+                    {item.title}
+                  </Link>
+                  <Separator className="bg-neutral-300 h-[1px] my-2" />
                 </div>
               )
             )}
           </div>
 
-          <Separator className="bg-neutral-300 h-[2px] my-4" />
-
           {/* Info Links */}
           <ul className="flex flex-col gap-[12px] text-center">
             {navbarCenterData.leftData.map((item) => (
-              <li key={item.id} className={`px-1 uppercase ${styles.unitxt}`}>
-                {item.title}
+              <li key={item.id} className={`px-1 !text-[17px] !font-[300] ${styles.unitxt} cursor-pointer`}>
+                <Link to="/">{item.title}</Link>
               </li>
             ))}
           </ul>
 
           {/* Contacts */}
-          <div className="mt-6 flex flex-col gap-[12px] text-center">
+          <Link to="/" className="mt-6 flex flex-col gap-[12px] text-center">
             {navbarCenterData.rightData.contacts.map((contact) => (
-              <div key={contact.id} className={`flex justify-center items-center gap-2 ${styles.unitxt}`}>
-                <img src={contact.img} alt="icon" className="w-4 h-4" />
-                <p>{contact.title}</p>
-              </div>
+              <Link to="/" key={contact.id} className={`flex justify-center items-center gap-2 ${styles.unitxt} cursor-pointer`}>
+                <img src={contact.img} alt="icon" className="w-6 h-6" />
+                <p className={`${styles.unitxt} !font-semibold`} >{contact.title}</p>
+              </Link>
             ))}
-          </div>
+          </Link>
 
           {/* Social icons */}
-          <div className="flex justify-center space-x-3 mt-4">
+          <div className="flex justify-center !font-bold space-x-3 mt-4">
             {navbarCenterData.rightData.social.map((social) => (
+              <Link to="/" key={social.id}>
               <img
-                key={social.id}
                 src={social.img}
                 alt={social.alt}
-                className="w-5 h-5"
+                className="w-6 h-6 cursor-pointer"
               />
-            ))}
+              </Link>
+              ))}
           </div>
         </SheetContent>
       </Sheet>
 
       {/* Logo & Cart */}
-      <NavLogo cn="p-0 h-full lg:hidden cursor-pointer" />
+      <Link to="/" className="p-0 h-full lg:hidden cursor-pointer">
+        <NavLogo cn="p-0 h-full lg:hidden cursor-pointer" />
+      </Link>
       <img src={cart} alt="cart" className="cursor-pointer" />
     </div>
   );

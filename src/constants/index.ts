@@ -293,3 +293,5 @@ export const PopularSetsData = [
   { id: 5, name: "Набор на 16", desc: "Набор 16 шт. Вкусы: соленая карамель, голубой сыр, пармезан, шоколад  ", price: 1500, img: PopularSets5 },
   { id: 6, name: "Сердце ", desc: "24 штуки в коробке в виде сердца.Ассорти из 6 вкусов ", price: 2500, img: PopularSets6 },
 ]
+
+export * from './footer';

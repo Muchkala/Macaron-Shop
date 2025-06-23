@@ -1,5 +1,5 @@
 export const styles = {
-    container: "max-w-[300px] sm:max-w-[550px] md:max-w-[750px] w-full lg:max-w-[992px] xl:max-w-[1200px] mx-auto",
+    container: "max-w-[300px] sm:max-w-[550px] md:max-w-[750px] w-full lg:max-w-[1080px] xl:max-w-[1280px] px-[8px] sm:px-[12px] md:px-[16px] lg:px-[24px] mx-auto",
     unitxt: "text-[14px] md:text-[16px] font-normal leading-[100%] font-proxima",
     borderBHover: 'hover:border-b-2 hover:border-b-orange-600 border-b-2 border-transparent transition-[0.2s] flex place-items-center'
 }

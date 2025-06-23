@@ -24,7 +24,7 @@ export default function NavbarCenter() {
         {/* RIGHT DATA */}
         <div className="flex justify-start xl:gap-[3px] lg:justify-evenly  lg:w-[105%] items-center">
           {/* Language Selector */}
-          <NavCenterAccardion />
+          <NavCenterAccardion isbold={false} />
           {/* Contacts */}
           {navbarCenterData.rightData.contacts.map((contact) => (
             <div key={contact.id} className="flex items-center ml-4">

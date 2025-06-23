@@ -1,4 +1,3 @@
-
 export interface ISaleProducts {
   id: number;
   img: string;
@@ -18,7 +17,6 @@ export type HolidaysType = {
   rotate?: number;
 }
 
-
 export type HeaderCardData = {
   id: number;
   image: string;
@@ -27,3 +25,19 @@ export type HeaderCardData = {
   gradient: string;
 };
 
+export interface Feature {
+  icon: string;
+  text: string;
+}
+
+export interface LinkSection {
+  title: string;
+  links: string[];
+  className?: string;
+}
+
+export interface SocialLink {
+  icon: string;
+  alt: string;
+  url: string;
+}

@@ -17,7 +17,7 @@ import { styles } from "@/styles/styles";
 
 const languages = navbarCenterData.rightData.selectLang;
 
-export function NavCenterAccardion() {
+export function NavCenterAccardion({isbold}: {isbold: boolean}) {
   const [language, setLanguage] = useState(0);
 
   return (
@@ -25,7 +25,7 @@ export function NavCenterAccardion() {
       <DialogTrigger asChild>
         <Button
           variant="ghost"
-          className={cn(styles.unitxt, "gap-2 text-sm px-3 py-2")}
+          className={cn(styles.unitxt, isbold ? "font-semibold" : "font-normal", "gap-2 text-sm px-3 py-2")}
         >
           <img src={location} alt="Location" className="w-5 h-5" />
           {languages.find((l) => l.id === language)?.title}
