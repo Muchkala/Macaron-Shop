@@ -26,7 +26,7 @@ export default function BarForMobile() {
   ];
 
   return (
-    <div className="w-full h-[59px] lg:hidden flex justify-between items-center px-4">
+    <div className="w-full h-[59px] lg:hidden flex justify-between items-center px-4 fixed top-0 left-0 z-50 bg-[#fceee8] shadow-md">
       <Sheet>
         <SheetTrigger asChild>
           <img src={bars} alt="menu" className="cursor-pointer" />
