@@ -41,3 +41,11 @@ export interface SocialLink {
   alt: string;
   url: string;
 }
+
+export type NewsItem = {
+  id: number;
+  image: string;
+  date: string;
+  title: string;
+  description: string;
+};

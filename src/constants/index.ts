@@ -31,8 +31,16 @@ import PopularSets6 from '@/assets/images/Popular sets (6).png'
 import type { HeaderCardData, HolidaysType, ISaleProducts } from '@/types'
 import type { NavbarCenterData, NavbarTop } from '@/components/shared/Navbar/navbar.config'
 
-
-
+import img0 from '@/assets/images/News0.png';
+import img1 from '@/assets/images/News1.png';
+import img2 from '@/assets/images/News2.png';
+import img3 from '@/assets/images/News3.png';
+import img4 from '@/assets/images/News4.png';
+import img5 from '@/assets/images/News5.png';
+import img6 from '@/assets/images/News6.png';
+import img7 from '@/assets/images/News7.png';
+import img8 from '@/assets/images/News8.png';
+import type { NewsItem } from '@/types'
 
 import HHdr1 from '@/assets/images/HomeHeaderBTM1.png'
 import HHdr2 from '@/assets/images/HomeHeaderBTM2.png'
@@ -293,5 +301,71 @@ export const PopularSetsData = [
   { id: 5, name: "Набор на 16", desc: "Набор 16 шт. Вкусы: соленая карамель, голубой сыр, пармезан, шоколад  ", price: 1500, img: PopularSets5 },
   { id: 6, name: "Сердце ", desc: "24 штуки в коробке в виде сердца.Ассорти из 6 вкусов ", price: 2500, img: PopularSets6 },
 ]
+
+export const newsData: NewsItem[] = [
+  {
+    id: 1,
+    image: img0,
+    date: '25.02.2023',
+    title: 'Скоро главный праздник весны!',
+    description: 'Девушки любят, когда вкусно, красиво и натурально. Смотрите больше наборов с десертами ручной работы'
+  },
+  {
+    id: 2,
+    image: img1,
+    date: '17.02.2023',
+    title: 'Конкурс на 23 февраля!',
+    description: 'День Защитника Отечества уже совсем скоро! Порадуйте своего сладкоежку с помощью аппетитных наборов от МакаронШоп'
+  },
+  {
+    id: 3,
+    image: img2,
+    date: '11.02.2023',
+    title: 'Экспресс-конкурс ко дню Святого Валентина',
+    description: 'Подарок уже через 2 дняДень всех влюблённых не за горами. Расскажи о своих чувствах с помощью сладкой валентинки от МакаронШоп'
+  },
+  {
+    id: 4,
+    image: img3,
+    date: '25.02.2023',
+    title: 'Впереди свадьба?',
+    description: 'Мы предлагаем несколько оригинальных и простых идей оформления. Гости точно запомнят'
+  },
+  {
+    id: 5,
+    image: img4,
+    date: '26.02.2023',
+    title: 'Подарки для женщин',
+    description: 'День Защитника Отечества уже совсем скоро! Порадуйте своего сладкоежку с помощью аппетитных наборов от МакаронШоп'
+  },
+  {
+    id: 6,
+    image: img5,
+    date: '11.02.2023',
+    title: 'Сладкие подарки на 23 февраля',
+    description: 'Наша новая серия наборов макарон создана специально для того, чтобы порадовать ваших сладкоежек. Ведь мужчины тоже любят сладенькое'
+  },
+  {
+    id: 7,
+    image: img6,
+    date: '05.04.2023',
+    title: 'Впереди праздник пасхи',
+    description: 'Порадуйте своих близких вкусными пасхальными наборами макарон Наша новая коллекция подарков уже в продаже'
+  },
+  {
+    id: 8,
+    image: img7,
+    date: '30.03.2023',
+    title: 'Аппетитные наборы с НОВЫМИ вкусами',
+    description: 'Готовы представить вам коллекцию новых умопомрачительных вкусов макарон'
+  },
+  {
+    id: 9,
+    image: img8,
+    date: '23.03.2023',
+    title: 'Мы печем пышные и мягкие маффины',
+    description: 'Их бархатистая структура и внушительный вес впечатляют абсолютно любого!'
+  }
+];
 
 export * from './footer';

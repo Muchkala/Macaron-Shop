@@ -4,8 +4,7 @@ import Holidays from "@/components/Holidays";
 import PopularSetsList from "@/components/PopularSetsList";
 import HomeHeader from "@/components/HomeHeader";
 import HomeHeaderBottom from "@/components/HomeHeaderBottom";
-import Footer from "@/components/shared/Footer";
-
+import News from "@/components/News";
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
       <SaleProductsList data={SaleProducts} title={"Акции"} />
       <Holidays />
       <PopularSetsList />
-      <Footer/>
+      <News />
     </div>
   )
 }
